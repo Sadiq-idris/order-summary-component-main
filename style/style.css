@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url("../images/pattern-background-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family:'Kumbh Sans', sans-serif;
+    font-size:16px;
+    width:100%;
+    background-color: hsl(225, 100%, 94%);
+    color: hsl(223, 47%, 23%);
+}
+h1{
+    font-weight:900;
+    font-size:25px;
+}
+p{
+    font-weight:500;
+    margin:20px 0;
+    color:hsl(224, 23%, 55%);
+}
+h2{
+    font-weight:900;
+    font-size:16px;
+}
+a{
+    font-weight:900;
+    font-size:15px;
+}
+.main-box{
+    width:30%;
+    margin:70px auto;
+}
+.main-box .hero{
+    width:100%;
+    border-radius:10px 10px 0 0;
+}
+.box{
+    background-color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:-5px;
+    border-radius:0 0 10px 10px;
+    box-shadow:5px 5px 25px  hsl(222, 14%, 68%);
+} 
+
+.plan{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin:20px 0;
+    background-color: hsl(225, 100%, 98%);
+    padding:20px;
+    border-radius:10px;
+    width:100%;
+}
+.plan .change{
+    margin-left:50px;
+    position:relative;
+    color: hsl(245, 75%, 52%);
+}
+.plan .change:hover{
+    color:hsla(245, 46%, 51%, 0.738);
+}
+.plan .year{
+
+    margin-left:10px;
+}
+.plan .year span{
+    color:hsl(224, 23%, 55%);
+    float:left;
+    margin-top:5px;
+}
+
+.box .btn{
+    width:100%;
+    background-color:hsl(245, 75%, 52%);
+    border:none;
+    color:white;
+    height:40px;
+    border-radius:10px;
+    margin-bottom:20px;
+    cursor:pointer;
+    box-shadow:0 20px 10px hsl(225, 100%, 94%);
+}
+.box .btn:hover{
+    background-color:hsla(245, 46%, 51%, 0.738) ;
+}
+.box .cancel{
+    color:hsl(224, 23%, 55%);
+    text-decoration:none;
+}
+.box .cancel:hover{
+    color:hsl(223, 47%, 23%);
+}
+
+@media(max-width:400px){
+    body{
+        background-image:url("../images/pattern-background-mobile.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    .main-box{
+        width:90%;
+        
+    }
+    .box{
+        padding:20px;
+    }
+    h2{
+        font-size:13px;
+    }
+    .change{
+        font-size:13px;
+    }
+}
